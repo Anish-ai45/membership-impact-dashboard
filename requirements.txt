@@ -1,0 +1,12 @@
+streamlit
+gradio
+plotly
+pandas
+google-cloud-aiplatform
+google-cloud-bigquery
+faiss-cpu
+numpy
+python-dotenv
+requests
+pypdf
+google-adk
