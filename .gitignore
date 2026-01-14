@@ -42,8 +42,11 @@ wheels/
 # Streamlit
 .streamlit/
 
-# RAG index
+# RAG index (generated files)
+app/.pdf_rag_index/
 app/.rag_index/
+*.faiss
+*.npy
 
 # Data files (optional - uncomment if you don't want to track data files)
 # data/*.csv
