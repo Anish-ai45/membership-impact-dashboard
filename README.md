@@ -2,6 +2,12 @@
 
 A multi-agent AI system that provides analytical insights into membership changes by combining real-time BigQuery data, contextual PDF rulebook information, and AI-powered reasoning using Google's Gemini models.
 
+## 📸 Dashboard Screenshot
+
+![Dashboard Screenshot](image.png)
+
+*The dashboard features a split-panel interface with a chat interface on the left for asking questions and an analytics panel on the right displaying key metrics, charts, and visualizations.*
+
 ## 🎯 Features
 
 - **Multi-Agent Architecture**: Specialized agents for data querying, RAG retrieval, and orchestration
@@ -12,6 +18,14 @@ A multi-agent AI system that provides analytical insights into membership change
 - **Intelligent Analysis**: LLM-powered explanations with rulebook context
 
 ## 🏗️ Architecture
+
+### Architecture Design Presentation
+
+📊 **[View Architecture Design Presentation](https://docs.google.com/presentation/d/1gjxv8oe_Bv5U-HdkUeQp4s4HvW41OkYI/edit?usp=sharing&ouid=105434890456291775421&rtpof=true&sd=true)**
+
+*Comprehensive presentation covering system architecture, design decisions, and implementation details.*
+
+### System Architecture Diagram
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -103,7 +117,7 @@ A multi-agent AI system that provides analytical insights into membership change
    GOOGLE_CLOUD_PROJECT=your-project-id
    GOOGLE_CLOUD_REGION=us-central1
    GOOGLE_AI_API_KEY=your-api-key
-   USE_ADK=false  # Set to 'true' to use ADK orchestrator
+   USE_ADK=true  # Set to 'true' to use ADK orchestrator
    ```
 
 5. **Set up Google Cloud authentication**:
@@ -163,7 +177,7 @@ The SDK-based orchestrator is the default and proven implementation:
 
 ```bash
 # Ensure USE_ADK is not set or set to false
-export USE_ADK=false
+export USE_ADK=true
 python app/dashboard.py
 ```
 
@@ -343,6 +357,11 @@ Key dependencies (see `requirements.txt` for full list):
 ## 📧 Support
 
 [Add support contact information if applicable]
+
+## 📚 Additional Documentation
+
+- **[Architecture Design Presentation](https://docs.google.com/presentation/d/1gjxv8oe_Bv5U-HdkUeQp4s4HvW41OkYI/edit?usp=sharing&ouid=105434890456291775421&rtpof=true&sd=true)** - Comprehensive presentation covering system architecture, design decisions, and implementation details
+- **[Integration Guide](INTEGRATION_GUIDE.md)** - Detailed documentation on component integration patterns and data flow
 
 ---
 
